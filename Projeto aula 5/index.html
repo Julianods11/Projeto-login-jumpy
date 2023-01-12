@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login Jumpy</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="img/logo.svg" alt="">
+        </div>
+    </header>
+    <section>
+
+        <div id="imageTitle">
+
+            <div id="jumpy">
+                <img src="img/jumpy.svg" alt="">
+            </div>
+
+            <div id="title">
+                <h1>Bem vindo ao Jumpy!</h1>
+            </div>
+
+        </div>
+
+        <form action="" id="myForm">
+            <label for="name">Nome Completo:</label>
+            <input type="text" name="nome" id="nome" placeholder="Nome completo" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="email@email.com" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="number" name="telefone" id="telefone" placeholder="(00) 00000 - 0000" required>
+
+            <label for="cpf">CPF:</label>
+            <input type="number" name="cpf" id="cpf" placeholder="000.000.000-00" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" placeholder="********" required>
+
+            <button id="button" onmouseenter="validar()" onmouseleave="revalidar(this)">Cadastrar</button>
+            <p id="errormsg">
+                
+            </p>
+
+        </form>
+    </section>
+
+
+
+
+
+
+
+
+
+    <script src="config.js"></script>
+</body>
+
+</html>
